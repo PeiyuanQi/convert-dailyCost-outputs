@@ -51,6 +51,7 @@ if __name__ == '__main__':
         #print(cate)
 
         price = abs(float(row['Sum']) * float(row['Rate']))
+        price = round(price, 2)
         newRowData = {
             '类型': [type],
             '时间': [time],
