@@ -21,6 +21,7 @@ if __name__ == '__main__':
             type = "收入"
 
         time = row['Date']
+        time = time.replace('/','-')
         newMap = {
             "General"    : "其他",
             "Food"       : "吃喝",
